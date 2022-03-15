@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="script/infoGame.js" defer></script>
+    <script src="script/cubo.js" defer></script>
+    <title>Dados</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container__infoGame" id="container__infoGame">
+        <div class="acesLogo">
+          <img src="img/logoAces.svg" alt="" />
+        </div>
+        <div class="infoGame">
+          <div class="bookImg">
+            <img src="img/matematica-3.png" alt="" />
+          </div>
+          <div class="detailsGame">
+            <div class="detail">
+              <h1 class="detail__title" id="title"></h1>
+              <h2 class="detail__capitulo" id="chapter"></h2>
+              <h3 class="detail__consigna" id="instructions"></h3>
+              <!-- <p class="detail__numberQuestion">
+                    Number of questions:
+                    <span id="textNumbersQuestions"> 10 </span>
+                  </p> -->
+            </div>
+            <div class="buttonStar">
+              <div class="infoBtn__star" id="infoBtn__star">
+                <span id="starGameText"> START </span>
+                <img id="starGameImg" src="img/btn_play.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="container__selectOption container__selectOption--hide"
+        id="container__selectOption"
+      >
+        <div class="imgLogoBook">
+          <img src="img/logo.svg" alt="" />
+        </div>
+        <div class="postSelectOpcion">
+          <span>Elije la cantidad de dados</span>
+        </div>
+        <div class="optionsDados">
+          <div class="dado dadoOne" id="dadoOne">
+            <span>1 dado</span>
+            <img src="img/dado.png" alt="" />
+          </div>
+          <div class="dado dadoTwo" id="dadoTwo">
+            <span>2 dados</span>
+            <img src="img/dados.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div
+        class="container__startGame container__startGame--hide"
+        id="container__startGame"
+      >
+        <div class="logoStarGame">
+          <img src="img/logo.svg" alt="" />
+        </div>
+        <div class="dadosContainer">
+          <div class="contenedor">
+            <div class="cube" id="cubo">
+              <div class="cube-face front">
+                <div class="inside">
+                  <span class="dot"></span>
+                </div>
+              </div>
+              <div class="cube-face back">
+                <div class="inside">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              </div>
+              <div class="cube-face left">
+                <div class="inside">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              </div>
+              <div class="cube-face right">
+                <div class="inside">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              </div>
+              <div class="cube-face top">
+                <div class="inside">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              </div>
+              <div class="cube-face bottom">
+                <div class="inside">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contenedor">
+            <div class="cubeDos">
+              <div class="cube-face front">
+                <div class="inside">
+                  <span class="dot"></span>
+                </div>
+              </div>
+              <div class="cube-face back">
+                <div class="inside">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              </div>
+              <div class="cube-face left">
+                <div class="inside">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              </div>
+              <div class="cube-face right">
+                <div class="inside">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              </div>
+              <div class="cube-face top">
+                <div class="inside">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              </div>
+              <div class="cube-face bottom">
+                <div class="inside">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btn">
+          <button class="btnthrow" id="throw">Lanzar dados</button>
+        </div>
+        <div class="infoGame">
+          <div class="reportData">
+            <span id="one">0</span>
+            <img src="img/dadoUno.png" alt="" />
+          </div>
+          <div class="reportData">
+            <span id="two">0</span>
+            <img src="img/dadoDos.png" alt="" />
+          </div>
+          <div class="reportData">
+            <span id="three">0</span>
+            <img src="img/dadoTres.png" alt="" />
+          </div>
+          <div class="reportData">
+            <span id="four">0</span>
+            <img src="img/dado4.png" alt="" />
+          </div>
+          <div class="reportData">
+            <span id="five">0</span>
+            <img src="img/dado5.png" alt="" />
+          </div>
+          <div class="reportData">
+            <span id="six">0</span>
+            <img src="img/dado6.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

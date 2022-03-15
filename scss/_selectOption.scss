@@ -1,0 +1,62 @@
+//se debe eliminar esta clase con js para que se pueda mostrar la pantalla
+
+// A partir de aqui se comienza a diseñar el juego
+
+.container__selectOption {
+  background-color: $color--backgroundGame;
+  width: 90%;
+  height: 95vh;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  .imgLogoBook {
+    width: 50%;
+  }
+  .postSelectOpcion {
+    background-color: $color-textCard;
+
+    width: 80%;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  .optionsDados {
+    width: 100%;
+    text-align: center;
+    .dado {
+      margin: 0 auto 30px auto;
+      background-color: $color--AnswerCorret;
+      border-radius: 15px;
+
+      width: 150px;
+      height: 150px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      cursor: pointer;
+      &:hover {
+        border: 4px solid $color-textCard;
+        background-color: $color--backgroundGame;
+      }
+      span {
+        background-color: $color-textCard;
+        border-radius: 10px;
+        width: 60%;
+        color: $white;
+        padding: 5px;
+      }
+      img {
+        width: 50%;
+      }
+    }
+  }
+}
+
+.container__selectOption--hide {
+  display: none;
+}

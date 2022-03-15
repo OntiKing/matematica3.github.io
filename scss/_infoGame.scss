@@ -1,0 +1,87 @@
+.container__infoGame {
+  background-color: $color--backgroundGame;
+  width: 90%;
+  height: 95vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  .acesLogo {
+    width: 100%;
+    text-align: center;
+    img {
+      height: 60px;
+    }
+  }
+  .infoGame {
+    margin-top: 30px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .bookImg {
+      width: 250px;
+      text-align: center;
+      margin-bottom: 30px;
+      img {
+        width: 150px;
+        border-radius: 10px;
+        transition: all 1s ease;
+        &:hover {
+          scale: (1.1);
+        }
+      }
+    }
+    .detailsGame {
+      text-align: center;
+
+      .detail {
+        h2 {
+          color: $color--AnswerCorret;
+          font-weight: 300;
+          margin-bottom: 30px;
+        }
+        h3 {
+          font-weight: 400;
+          font-size: 1.2em;
+          margin-bottom: 30px;
+        }
+      }
+      .buttonStar {
+        text-align: center;
+        width: 100%;
+
+        .infoBtn__star {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 15px;
+          width: 60%;
+          border-radius: 5px;
+          padding: 10px;
+          margin: auto;
+          background-color: $color--AnswerCorret;
+          transition: all 0.3s ease;
+          &:hover {
+            cursor: pointer;
+            background-color: $color-primary;
+          }
+          span {
+            color: $white;
+          }
+          img {
+            width: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.hideInfoGame {
+  display: none;
+}
