@@ -2,12 +2,20 @@ const $cuboUno = document.getElementById("cubo");
 const $throw = document.getElementById("throw");
 const time = 4;
 
+let one = 0,
+  two = 0,
+  three = 0,
+  four = 0,
+  five = 0,
+  six = 0;
+
+let randomValue = 0;
 $throw.addEventListener("click", () => {
   $cuboUno.style.transition = "";
   $cuboUno.style.transform = `translateY(50px) rotateX(0deg) rotateY(0deg) rotateZ(0deg)`;
   setTimeout(() => {
     $cuboUno.style.transition = `transform ${time}s`;
-    const randomValue = Math.floor(Math.random() * 6 + 1);
+    randomValue = Math.floor(Math.random() * 6 + 1);
 
     switch (randomValue) {
       case 1:
@@ -29,7 +37,8 @@ $throw.addEventListener("click", () => {
         $cuboUno.style.transform = `translateY(30px) rotateX(3600deg) rotateY(1980deg) rotateZ(3600deg)`;
         break;
     }
-    console.log(`Dado Uno:  ${randomValue}`);
+
+    addRandomNumber();
     // setTimeout(() => {
     //   resultadoUno.innerHTML = `Resultado dado Uno ${randomValue}`;
     //   dadoUno.push(randomValue);
@@ -40,6 +49,7 @@ $throw.addEventListener("click", () => {
 
 const $cuboDos = document.querySelector(".cubeDos");
 const timeDos = 4;
+let randomValueDos = 0;
 const resultadoDos = document.querySelector(".resultadoDos");
 
 $throw.addEventListener("click", () => {
@@ -47,7 +57,7 @@ $throw.addEventListener("click", () => {
   $cuboDos.style.transform = `translateY(50px) rotateX(0deg) rotateY(0deg) rotateZ(0deg)`;
   setTimeout(() => {
     $cuboDos.style.transition = `transform ${timeDos}s`;
-    const randomValueDos = Math.floor(Math.random() * 6 + 1);
+    randomValueDos = Math.floor(Math.random() * 6 + 1);
 
     switch (randomValueDos) {
       case 1:
@@ -70,10 +80,8 @@ $throw.addEventListener("click", () => {
         $cuboDos.style.transform = `translateY(30px) rotateX(3600deg) rotateY(1980deg) rotateZ(3600deg)`;
         break;
     }
+    addRandomNumberTwo();
 
-    setTimeout(() => {
-      console.log(`Dado Dos:  ${randomValueDos}`);
-    }, 4000);
     // setTimeout(() => {
     //   resultadoDos.innerHTML = `Resultado dado Uno ${randomValueDos}`;
     //   dadoDos.push(randomValueDos);
@@ -81,3 +89,50 @@ $throw.addEventListener("click", () => {
     // }, 4000);
   }, timeDos);
 });
+
+const addRandomNumber = () => {
+  if (randomValue === 1) {
+    one = one + 1;
+  } else if (randomValue === 2) {
+    two = two + 1;
+  } else if (randomValue === 3) {
+    three = three + 1;
+  } else if (randomValue === 4) {
+    four = four + 1;
+  } else if (randomValue === 5) {
+    five = five + 1;
+  } else if (randomValue === 6) {
+    six = six + 1;
+  }
+  setTimeout(() => {
+    seeResults();
+  }, 5000);
+};
+
+const addRandomNumberTwo = () => {
+  if (randomValueDos === 1) {
+    one = one + 1;
+  } else if (randomValueDos === 2) {
+    two = two + 1;
+  } else if (randomValueDos === 3) {
+    three = three + 1;
+  } else if (randomValueDos === 4) {
+    four = four + 1;
+  } else if (randomValueDos === 5) {
+    five = five + 1;
+  } else if (randomValueDos === 6) {
+    six = six + 1;
+  }
+  setTimeout(() => {
+    seeResults();
+  }, 4000);
+};
+
+const seeResults = () => {
+  document.getElementById("one").textContent = one;
+  document.getElementById("two").textContent = two;
+  document.getElementById("three").textContent = three;
+  document.getElementById("four").textContent = four;
+  document.getElementById("five").textContent = five;
+  document.getElementById("six").textContent = six;
+};
