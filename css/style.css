@@ -674,11 +674,6 @@ body {
   display: none;
 }
 
-.containerDataReport {
-  -webkit-transform: rotateZ(-90deg);
-          transform: rotateZ(-90deg);
-}
-
 progress[value] {
   /* Elimino la apariencia por defecto */
   -webkit-appearance: none;
@@ -688,7 +683,7 @@ progress[value] {
   border: none;
   /* Añado mis propios estilos */
   width: 180px;
-  height: 20px;
+  height: 30px;
   margin: 10px;
   overflow: hidden;
   /*  Estos estilos solo se aplicaran al fondo de la barra en mozilla */
@@ -696,7 +691,30 @@ progress[value] {
   background-color: #d8d8d8;
 }
 
-.center .progress {
+.containerDataReport {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+}
+
+.containerDataReport .center {
+  -webkit-transform: rotateZ(-90deg);
+          transform: rotateZ(-90deg);
+}
+
+.containerDataReport .center .progress {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -706,7 +724,26 @@ progress[value] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 10px;
+  gap: 5px;
+}
+
+.containerDataReport .center .progress img {
+  width: 30px;
+}
+
+.containerDataReport .btnPrint {
+  width: 100%;
+  text-align: center;
+}
+
+.containerDataReport .btnPrint button {
+  width: 80%;
+  border: none;
+  border-radius: 10px;
+  background-color: rebeccapurple;
+  padding: 10px;
+  margin: 0 auto;
+  color: white;
 }
 
 .containerDataReport--hide {
