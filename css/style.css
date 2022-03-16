@@ -56,7 +56,7 @@ body {
 }
 
 .container__startGame .logoStarGame img {
-  width: 180px;
+  width: 250px;
   margin-bottom: 30px;
 }
 
@@ -72,31 +72,45 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #b9b9b8;
-  border-radius: 15px;
+  background-color: #12b4bf;
+  border-radius: 15px 15px 0 0;
   padding-bottom: 50px;
 }
 
 .container__startGame .btn {
-  width: 80%;
+  width: 100%;
   text-align: center;
+  background-color: #12b4bf;
+  padding-bottom: 10px;
+  border-radius: 0 0 15px 15px;
 }
 
 .container__startGame .btn .btnthrow {
-  width: 70%;
+  width: 60%;
   border: none;
-  background-color: #00a3a6;
+  background-color: #e52946;
   border-radius: 15px;
   margin-top: 10px;
   padding: 10px;
   cursor: pointer;
-  color: #fff;
+  color: white;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  font-size: 1.1em;
 }
 
 .container__startGame .btn .btnthrow:hover {
-  background-color: rgba(223, 221, 219, 0.699);
+  background-color: #b8b4b4;
+  color: black;
+}
+
+.container__startGame .btn .btnthrow--enable {
+  background-color: #f3e0ae;
+  color: black;
+}
+
+.container__startGame .btn .btnthrow--enable:hover {
+  background-color: #f3e0ae;
   color: black;
 }
 
@@ -169,6 +183,12 @@ body {
   width: 50%;
 }
 
+.container__startGame .btnReport .throwCount .totalThrow {
+  font-size: 1.7em;
+  font-weight: 700;
+  color: #809c59;
+}
+
 .container__startGame .btnReport .btnReport {
   width: 50%;
   margin: auto;
@@ -181,7 +201,10 @@ body {
 }
 
 .container__startGame .btnReport .btnReport .btn__btnReport {
+  border: none;
+  border-radius: 5px;
   padding: 10px;
+  background-color: #ffd615;
 }
 
 .container__startGame--hide {
@@ -357,37 +380,37 @@ body {
 }
 
 .front {
-  background-color: #ccc8c8;
+  background-color: #e7e5e5;
   -webkit-transform: translateZ(50px);
           transform: translateZ(50px);
 }
 
 .back {
-  background-color: #ccc8c8;
+  background-color: #e7e5e5;
   -webkit-transform: rotateY(180deg) translateZ(50px);
           transform: rotateY(180deg) translateZ(50px);
 }
 
 .left {
-  background-color: #ccc8c8;
+  background-color: #e7e5e5;
   -webkit-transform: rotateY(-90deg) translateZ(50px);
           transform: rotateY(-90deg) translateZ(50px);
 }
 
 .right {
-  background-color: #ccc8c8;
+  background-color: #e7e5e5;
   -webkit-transform: rotateY(90deg) translateZ(50px);
           transform: rotateY(90deg) translateZ(50px);
 }
 
 .top {
-  background-color: #ccc8c8;
+  background-color: #e7e5e5;
   -webkit-transform: rotateX(90deg) translateZ(50px);
           transform: rotateX(90deg) translateZ(50px);
 }
 
 .bottom {
-  background-color: #ccc8c8;
+  background-color: #e7e5e5;
   -webkit-transform: rotateX(-90deg) translateZ(50px);
           transform: rotateX(-90deg) translateZ(50px);
 }

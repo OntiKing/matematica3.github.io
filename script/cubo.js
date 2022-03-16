@@ -55,7 +55,7 @@ $throw.addEventListener("click", () => {
       //   dadoUno.push(randomValue);
       //   console.log(dadoUno);
       // }, 4000);
-      active = 0;
+      disableBtn();
     }, time);
   }
 });
@@ -104,11 +104,16 @@ $throw.addEventListener("click", () => {
         //   console.log(dadoDos);
         // }, 4000);
       }, timeDos);
-      active = 0;
+      disableBtn();
     } else {
     }
   }
 });
+
+const disableBtn = () => {
+  active = 0;
+  $throw.classList.add("btnthrow--enable");
+};
 
 const addRandomNumber = () => {
   if (randomValue === 1) {
@@ -157,4 +162,5 @@ const seeResults = () => {
   document.getElementById("five").textContent = five;
   document.getElementById("six").textContent = six;
   active = 1;
+  $throw.classList.remove("btnthrow--enable");
 };

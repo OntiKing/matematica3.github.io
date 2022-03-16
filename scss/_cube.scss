@@ -36,32 +36,32 @@
 }
 
 .front {
-  background-color: rgb(204, 200, 200);
+  background-color: $colorCubo;
   transform: translateZ(50px);
 }
 
 .back {
-  background-color: rgb(204, 200, 200);
+  background-color: $colorCubo;
   transform: rotateY(180deg) translateZ(50px);
 }
 
 .left {
-  background-color: rgb(204, 200, 200);
+  background-color: $colorCubo;
   transform: rotateY(-90deg) translateZ(50px);
 }
 
 .right {
-  background-color: rgb(204, 200, 200);
+  background-color: $colorCubo;
   transform: rotateY(90deg) translateZ(50px);
 }
 
 .top {
-  background-color: rgb(204, 200, 200);
+  background-color: $colorCubo;
   transform: rotateX(90deg) translateZ(50px);
 }
 
 .bottom {
-  background-color: rgb(204, 200, 200);
+  background-color: $colorCubo;
   transform: rotateX(-90deg) translateZ(50px);
 }
 

@@ -6,7 +6,7 @@
   align-items: center;
   .logoStarGame {
     img {
-      width: 180px;
+      width: 250px;
       margin-bottom: 30px;
     }
   }
@@ -16,25 +16,37 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $color-textCard;
-    border-radius: 15px;
+    background-color: $Celeste;
+    border-radius: 15px 15px 0 0;
     padding-bottom: 50px;
   }
   .btn {
-    width: 80%;
+    width: 100%;
     text-align: center;
+    background-color: $Celeste;
+    padding-bottom: 10px;
+    border-radius: 0 0 15px 15px;
     .btnthrow {
-      width: 70%;
+      width: 60%;
       border: none;
-      background-color: $color--AnswerCorret;
+      background-color: #e52946;
       border-radius: 15px;
       margin-top: 10px;
       padding: 10px;
       cursor: pointer;
-      color: $white;
+      color: white;
       transition: all 0.5s ease;
+      font-size: 1.1em;
       &:hover {
-        background-color: $color--backgroundGame;
+        background-color: $colorHoverBtn;
+        color: black;
+      }
+    }
+    .btnthrow--enable {
+      background-color: $colorDisableBtn;
+      color: black;
+      &:hover {
+        background-color: $colorDisableBtn;
         color: black;
       }
     }
@@ -76,14 +88,23 @@
       justify-content: space-around;
       align-items: center;
       width: 50%;
+      .totalThrow {
+        font-size: 1.7em;
+        font-weight: 700;
+        color: $Bordo;
+      }
     }
     .btnReport {
       width: 50%;
       margin: auto;
       display: flex;
       justify-content: right;
+
       .btn__btnReport {
+        border: none;
+        border-radius: 5px;
         padding: 10px;
+        background-color: $Amarillo;
       }
     }
   }
