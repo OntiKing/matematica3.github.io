@@ -1,0 +1,36 @@
+.containerDataReport {
+  transform: rotateZ(-90deg);
+}
+
+progress[value] {
+  /* Elimino la apariencia por defecto */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  /* Quito el borde que aparece en Firefox */
+  border: none;
+
+  /* Añado mis propios estilos */
+  width: 180px;
+  height: 20px;
+  margin: 10px;
+  overflow: hidden;
+
+  /*  Estos estilos solo se aplicaran al fondo de la barra en mozilla */
+  border: 1px inset #666;
+  background-color: #d8d8d8;
+}
+
+.center {
+  .progress {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+.containerDataReport--hide {
+  display: none;
+}

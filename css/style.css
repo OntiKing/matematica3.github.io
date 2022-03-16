@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -670,6 +671,45 @@ body {
 }
 
 .container__selectOption--hide {
+  display: none;
+}
+
+.containerDataReport {
+  -webkit-transform: rotateZ(-90deg);
+          transform: rotateZ(-90deg);
+}
+
+progress[value] {
+  /* Elimino la apariencia por defecto */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* Quito el borde que aparece en Firefox */
+  border: none;
+  /* Añado mis propios estilos */
+  width: 180px;
+  height: 20px;
+  margin: 10px;
+  overflow: hidden;
+  /*  Estos estilos solo se aplicaran al fondo de la barra en mozilla */
+  border: 1px inset #666;
+  background-color: #d8d8d8;
+}
+
+.center .progress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.containerDataReport--hide {
   display: none;
 }
 /*# sourceMappingURL=style.css.map */

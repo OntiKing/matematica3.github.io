@@ -1,3 +1,4 @@
+const $containerDataReport = document.getElementById("containerDataReport");
 let title, chapter, instructions;
 
 async function obtenerDatos() {
@@ -45,3 +46,11 @@ function hideInfoGame() {
   $container__selectOption.classList.add("container__selectOption--hide");
   $container__startGame.classList.remove("container__startGame--hide");
 }
+
+//Boton para ver reporte
+
+document.getElementById("btn__btnReport").addEventListener("click", () => {
+  $container__startGame.classList.add("container__startGame--hide");
+  $containerDataReport.classList.remove("containerDataReport--hide");
+  seeReport();
+});

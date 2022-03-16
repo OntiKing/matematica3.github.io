@@ -8,6 +8,7 @@
     <script src="script/infoGame.js" defer></script>
     <script src="script/cubo.js" defer></script>
     <script src="script/selectDice.js" defer></script>
+    <script src="script/progressBar.js" defer></script>
     <title>Dados</title>
   </head>
   <body>
@@ -209,6 +210,50 @@
             <button class="btn__btnReport" id="btn__btnReport">
               Ver Gráfico
             </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="containerDataReport containerDataReport--hide"
+        id="containerDataReport"
+      >
+        <div class="center">
+          <div class="progress">
+            <p>1</p>
+            <progress id="oneDiceFound" max="15" value="91"></progress>
+            <span></span>
+          </div>
+
+          <div class="progress">
+            <p>2</p>
+            <progress id="twoDiceFound" max="15" value="0"></progress>
+            <span></span>
+          </div>
+
+          <div class="clear"></div>
+          <div class="progress">
+            <p>3</p>
+            <progress id="threeDiceFound" max="15" value="0"></progress>
+            <span></span>
+          </div>
+
+          <div class="progress">
+            <p>4</p>
+            <progress id="fourDiceFound" max="15" value="0"></progress>
+            <span></span>
+          </div>
+          <div class="clear"></div>
+
+          <div class="progress">
+            <p>5</p>
+            <progress id="fiveDiceFound" max="15" value="0"></progress>
+            <span></span>
+          </div>
+
+          <div class="progress">
+            <p>6</p>
+            <progress id="sixDiceFound" max="15" value="0"></progress>
+            <span></span>
           </div>
         </div>
       </div>
