@@ -1,11 +1,10 @@
 .container__infoGame {
-  background-color: $color--backgroundGame;
   width: 90%;
   height: 95vh;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   border-radius: 10px;
   .acesLogo {
@@ -16,7 +15,6 @@
     }
   }
   .infoGame {
-    margin-top: 30px;
     border-radius: 50px;
     display: flex;
     flex-direction: column;
@@ -64,11 +62,11 @@
           border-radius: 5px;
           padding: 10px;
           margin: auto;
-          background-color: $color--AnswerCorret;
+          background-color: $Rojo;
           transition: all 0.3s ease;
           &:hover {
             cursor: pointer;
-            background-color: $color-primary;
+            background-color: $Rojo;
           }
           span {
             color: $white;

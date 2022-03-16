@@ -34,8 +34,8 @@ function screenActive() {
 
 //Ahora ocultamos la opcion de dados para ir a starGame
 
-const $dadoOne = document.getElementById("dadoOne"),
-  $dadoTwo = document.getElementById("dadoTwo"),
+const $dadoOne = document.getElementById("diceOne"),
+  $dadoTwo = document.getElementById("diceTwo"),
   $container__startGame = document.getElementById("container__startGame");
 
 $dadoOne.addEventListener("click", hideInfoGame);

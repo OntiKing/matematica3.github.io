@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <script src="script/infoGame.js" defer></script>
     <script src="script/cubo.js" defer></script>
+    <script src="script/selectDice.js" defer></script>
     <title>Dados</title>
   </head>
   <body>
@@ -31,7 +32,7 @@
             </div>
             <div class="buttonStar">
               <div class="infoBtn__star" id="infoBtn__star">
-                <span id="starGameText"> START </span>
+                <span id="starGameText"> INICIAR </span>
                 <img id="starGameImg" src="img/btn_play.svg" alt="" />
               </div>
             </div>
@@ -43,17 +44,17 @@
         id="container__selectOption"
       >
         <div class="imgLogoBook">
-          <img src="img/logo.svg" alt="" />
+          <img src="img/matematica-3.svg" alt="" />
         </div>
         <div class="postSelectOpcion">
           <span>Elije la cantidad de dados</span>
         </div>
         <div class="optionsDados">
-          <div class="dado dadoOne" id="dadoOne">
+          <div class="dado dadoOne" id="diceOne">
             <span>1 dado</span>
             <img src="img/dado.png" alt="" />
           </div>
-          <div class="dado dadoTwo" id="dadoTwo">
+          <div class="dado dadoTwo diceTwo--hide" id="diceTwo">
             <span>2 dados</span>
             <img src="img/dados.png" alt="" />
           </div>
@@ -67,7 +68,7 @@
           <img src="img/logo.svg" alt="" />
         </div>
         <div class="dadosContainer">
-          <div class="contenedor">
+          <div class="contenedor cuboOne--hide" id="cuboOne">
             <div class="cube" id="cubo">
               <div class="cube-face front">
                 <div class="inside">
@@ -117,7 +118,7 @@
             </div>
           </div>
 
-          <div class="contenedor">
+          <div class="contenedor cuboTwo--hide" id="cuboTwo">
             <div class="cubeDos">
               <div class="cube-face front">
                 <div class="inside">
@@ -194,6 +195,17 @@
           <div class="reportData">
             <span id="six">0</span>
             <img src="img/dado6.png" alt="" />
+          </div>
+        </div>
+        <div class="btnReport">
+          <div class="throwCount">
+            <span>Cantidad de Tiradas</span>
+            <span class="totalThrow" id="totalThrow">1</span>
+          </div>
+          <div class="btnReport">
+            <button class="btn__btnReport" id="btn__btnReport">
+              Ver Gráfico
+            </button>
           </div>
         </div>
       </div>
