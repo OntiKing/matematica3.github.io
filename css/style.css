@@ -709,6 +709,10 @@ progress[value] {
   gap: 50px;
 }
 
+.containerDataReport .logoStarGame {
+  width: 250px;
+}
+
 .containerDataReport .center {
   -webkit-transform: rotateZ(-90deg);
           transform: rotateZ(-90deg);

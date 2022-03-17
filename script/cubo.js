@@ -1,7 +1,7 @@
 const $cuboUno = document.getElementById("cubo");
 const $throw = document.getElementById("throw");
 const $btn__btnReport = document.getElementById("btn__btnReport");
-const time = 4;
+const time = 2;
 
 let one = 0,
   two = 0,
@@ -61,7 +61,7 @@ $throw.addEventListener("click", () => {
 });
 
 const $cuboDos = document.querySelector(".cubeDos");
-const timeDos = 4;
+const timeDos = 2;
 let randomValueDos = 0;
 const resultadoDos = document.querySelector(".resultadoDos");
 
@@ -132,7 +132,7 @@ const addRandomNumber = () => {
 
   setTimeout(() => {
     seeResults();
-  }, 4000);
+  }, 2000);
 };
 
 const addRandomNumberTwo = () => {
@@ -151,7 +151,7 @@ const addRandomNumberTwo = () => {
   }
   setTimeout(() => {
     seeResults();
-  }, 3800);
+  }, 1800);
 };
 
 const seeResults = () => {

@@ -25,6 +25,9 @@ progress[value] {
   justify-content: center;
   align-items: center;
   gap: 50px;
+  .logoStarGame {
+    width: 250px;
+  }
   .center {
     transform: rotateZ(-90deg);
     .progress {

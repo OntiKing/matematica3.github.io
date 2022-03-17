@@ -9,10 +9,11 @@
     <script src="script/cubo.js" defer></script>
     <script src="script/selectDice.js" defer></script>
     <script src="script/progressBar.js" defer></script>
+
     <title>Dados</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container" id="containerMaster">
       <div class="container__infoGame" id="container__infoGame">
         <div class="acesLogo">
           <img src="img/logoAces.svg" alt="" />
@@ -217,6 +218,9 @@
         class="containerDataReport containerDataReport--hide"
         id="containerDataReport"
       >
+        <div class="logoStarGame">
+          <img src="img/matematica-3.svg" alt="" />
+        </div>
         <div class="center">
           <div class="progress">
             <img src="img/dadoTres.png" alt="" />
@@ -257,9 +261,19 @@
           </div>
         </div>
         <div class="btnPrint">
-          <button>imprimir</button>
+          <button id="boton">imprimir</button>
         </div>
       </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://html2canvas.hertzen.com/dist/html2canvas.js"
+    ></script>
+    <script src="script/printPdf.js"></script>
   </body>
 </html>
