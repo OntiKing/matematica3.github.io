@@ -70,27 +70,52 @@ function makePDF() {
     document.body.appendChild(canvas);
 
     var doc = new jsPDF();
+
     doc.setTextColor(150);
-    doc.text(`Dado Uno: ${one}`, 20, 30);
+    doc.text(`REPORTE ESTADISTICO`, 60, 10);
+    doc.addImage("img/matematica-3.png", "JPEG", 80, 20, 30, 40);
+
+    doc.setTextColor(150);
+    doc.text(
+      `La probabilidad de sacar uno en ${totalThrow} tiros es de ${one}`,
+      20,
+      70
+    );
 
     doc.setTextColor(255, 0, 0);
-    doc.text("This is red.", 20, 40);
+    doc.text(
+      `La probabilidad de sacar dos en ${totalThrow} tiros es de ${two}`,
+      20,
+      80
+    );
 
     doc.setTextColor(0, 255, 0);
-    doc.text("This is green.", 20, 50);
+    doc.text(
+      `La probabilidad de sacar tres en ${totalThrow} tiros es de ${three}`,
+      20,
+      90
+    );
 
     doc.setTextColor(0, 0, 255);
-    doc.text("This is blue.", 20, 60);
+    doc.text(
+      `La probabilidad de sacar cuatro en ${totalThrow} tiros es de ${four}`,
+      20,
+      100
+    );
 
     doc.setTextColor("red");
-    doc.text("This is red.", 60, 40);
+    doc.text(
+      `La probabilidad de sacar cinco en ${totalThrow} tiros es de ${five}`,
+      20,
+      110
+    );
 
     doc.setTextColor("green");
-    doc.text("This is green.", 60, 50);
-
-    doc.setTextColor("blue");
-    doc.text("This is blue.", 60, 60);
-    doc.addImage("img/matematica-3.png", "JPEG", 50, 40, 50, 60);
+    doc.text(
+      `La probabilidad de sacar seis en ${totalThrow} tiros es de ${six}`,
+      20,
+      120
+    );
 
     doc.save("docHtmlPDF");
   });
