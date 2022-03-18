@@ -161,6 +161,8 @@ const seeResults = () => {
   document.getElementById("four").textContent = four;
   document.getElementById("five").textContent = five;
   document.getElementById("six").textContent = six;
+  document.getElementById("totalThrownGame").textContent = totalThrow;
+  document.getElementById("totalDiceGame").textContent = quantityOption;
   active = 1;
   $throw.classList.remove("btnthrow--enable");
 };

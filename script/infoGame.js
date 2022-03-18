@@ -1,4 +1,5 @@
 const $containerDataReport = document.getElementById("containerDataReport");
+
 let title, chapter, instructions;
 
 async function obtenerDatos() {
@@ -52,5 +53,6 @@ function hideInfoGame() {
 document.getElementById("btn__btnReport").addEventListener("click", () => {
   $container__startGame.classList.add("container__startGame--hide");
   $containerDataReport.classList.remove("containerDataReport--hide");
+
   seeReport();
 });

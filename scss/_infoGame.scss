@@ -1,10 +1,11 @@
 .container__infoGame {
+  background-color: $color--backgroundGame;
   width: 90%;
   height: 95vh;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
   border-radius: 10px;
   .acesLogo {
@@ -12,10 +13,11 @@
     text-align: center;
     img {
       height: 60px;
+      margin-bottom: 20px;
     }
   }
   .infoGame {
-    border-radius: 50px;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,7 +27,9 @@
       width: 250px;
       text-align: center;
       margin-bottom: 30px;
+
       img {
+        box-shadow: 3px 5px 5px rgb(133, 131, 131);
         width: 150px;
         border-radius: 10px;
         transition: all 1s ease;
@@ -38,8 +42,10 @@
       text-align: center;
 
       .detail {
+        width: 90%;
+        margin: auto;
         h2 {
-          color: $color--AnswerCorret;
+          color: $Bordo;
           font-weight: 300;
           margin-bottom: 30px;
         }
@@ -62,11 +68,11 @@
           border-radius: 5px;
           padding: 10px;
           margin: auto;
-          background-color: $Rojo;
+          background-color: $CelesteHover;
           transition: all 0.3s ease;
           &:hover {
             cursor: pointer;
-            background-color: $Rojo;
+            background-color: $CelesteHover;
           }
           span {
             color: $white;

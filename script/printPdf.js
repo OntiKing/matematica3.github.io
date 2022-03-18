@@ -77,42 +77,42 @@ function makePDF() {
 
     doc.setTextColor(150);
     doc.text(
-      `La probabilidad de sacar uno en ${totalThrow} tiros es de ${one}`,
+      `La probabilidad de sacar uno en ${totalThrow} tiros fue de ${one}`,
       20,
       70
     );
 
-    doc.setTextColor(255, 0, 0);
+    doc.setTextColor(150);
     doc.text(
-      `La probabilidad de sacar dos en ${totalThrow} tiros es de ${two}`,
+      `La probabilidad de sacar dos en ${totalThrow} tiros fue de ${two}`,
       20,
       80
     );
 
-    doc.setTextColor(0, 255, 0);
+    doc.setTextColor(150);
     doc.text(
-      `La probabilidad de sacar tres en ${totalThrow} tiros es de ${three}`,
+      `La probabilidad de sacar tres en ${totalThrow} tiros fue de ${three}`,
       20,
       90
     );
 
-    doc.setTextColor(0, 0, 255);
+    doc.setTextColor(150);
     doc.text(
-      `La probabilidad de sacar cuatro en ${totalThrow} tiros es de ${four}`,
+      `La probabilidad de sacar cuatro en ${totalThrow} tiros fue de ${four}`,
       20,
       100
     );
 
-    doc.setTextColor("red");
+    doc.setTextColor(150);
     doc.text(
-      `La probabilidad de sacar cinco en ${totalThrow} tiros es de ${five}`,
+      `La probabilidad de sacar cinco en ${totalThrow} tiros fue de ${five}`,
       20,
       110
     );
 
-    doc.setTextColor("green");
+    doc.setTextColor(150);
     doc.text(
-      `La probabilidad de sacar seis en ${totalThrow} tiros es de ${six}`,
+      `La probabilidad de sacar seis en ${totalThrow} tiros fue de ${six}`,
       20,
       120
     );

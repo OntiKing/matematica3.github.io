@@ -1,0 +1,66 @@
+@media (min-width: 768px) {
+  .container__infoGame {
+    background-color: transparent;
+    .infoGame {
+      background-color: $color--backgroundGame;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      padding: 40px;
+      border-radius: 15px;
+      .bookImg {
+        width: 30%;
+        margin: 0;
+        img {
+          width: 200px;
+        }
+      }
+      .detailsGame {
+        width: 70%;
+      }
+    }
+  }
+  .container__selectOption {
+    .imgLogoBook {
+      width: 40%;
+    }
+    .postSelectOpcion {
+      width: 50%;
+    }
+    .optionsDados {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+      .dado {
+        margin: 0;
+        gap: 10px;
+      }
+    }
+  }
+  .container__startGame {
+    background-color: $color--backgroundGame;
+    .logoStarGame {
+      img {
+        width: 300px;
+      }
+    }
+    .dadosContainer {
+      //   background-color: $CelesteHover;
+      width: 80%;
+    }
+    .btn {
+      width: 80%;
+      //   background-color: $CelesteHover;
+      .btnthrow {
+      }
+    }
+  }
+  .contenedor {
+    margin: 0 30px;
+  }
+}
+
+@media (min-width: 768px) {
+}

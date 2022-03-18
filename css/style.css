@@ -1,4 +1,14 @@
 @charset "UTF-8";
+@font-face {
+  font-family: montserratA;
+  src: url(/font/Montserrat-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: montserratB;
+  src: url(/font/Montserrat-VariableFont_wght.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -40,7 +50,10 @@ body {
 }
 
 .container__startGame {
+  background-color: rgba(223, 221, 219, 0.473);
+  border-radius: 15px;
   width: 90%;
+  height: 95vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -58,12 +71,11 @@ body {
 
 .container__startGame .logoStarGame img {
   width: 250px;
-  margin-bottom: 30px;
 }
 
 .container__startGame .dadosContainer {
   width: 100%;
-  height: 180px;
+  height: 110px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -73,26 +85,23 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #12b4bf;
-  border-radius: 15px 15px 0 0;
-  padding-bottom: 50px;
+  padding-bottom: 80px;
 }
 
 .container__startGame .btn {
   width: 100%;
   text-align: center;
-  background-color: #12b4bf;
   padding-bottom: 10px;
   border-radius: 0 0 15px 15px;
 }
 
 .container__startGame .btn .btnthrow {
-  width: 60%;
+  width: 40%;
   border: none;
-  background-color: #e52946;
+  background-color: #30c4e6;
   border-radius: 15px;
   margin-top: 10px;
-  padding: 10px;
+  padding: 15px;
   cursor: pointer;
   color: white;
   -webkit-transition: all 0.5s ease;
@@ -148,7 +157,8 @@ body {
 }
 
 .container__startGame .infoGame .reportData span {
-  font-size: 1.5em;
+  font-weight: 800;
+  font-size: 1.6em;
   color: #00a3a6;
   padding: 5px;
 }
@@ -160,13 +170,13 @@ body {
 
 .container__startGame .btnReport {
   width: 90%;
-  margin-top: 25px;
+  margin-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -176,16 +186,21 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 20px;
   width: 50%;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
 }
 
 .container__startGame .btnReport .throwCount .totalThrow {
-  font-size: 1.7em;
+  font-size: 1.8em;
   font-weight: 700;
   color: #809c59;
 }
@@ -206,6 +221,7 @@ body {
   border-radius: 5px;
   padding: 10px;
   background-color: #ffd615;
+  cursor: pointer;
 }
 
 .container__startGame--hide {
@@ -213,6 +229,7 @@ body {
 }
 
 .container__infoGame {
+  background-color: rgba(223, 221, 219, 0.473);
   width: 90%;
   height: 95vh;
   overflow: hidden;
@@ -223,9 +240,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -239,10 +256,11 @@ body {
 
 .container__infoGame .acesLogo img {
   height: 60px;
+  margin-bottom: 20px;
 }
 
 .container__infoGame .infoGame {
-  border-radius: 50px;
+  border-radius: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -265,6 +283,8 @@ body {
 }
 
 .container__infoGame .infoGame .bookImg img {
+  -webkit-box-shadow: 3px 5px 5px #858383;
+          box-shadow: 3px 5px 5px #858383;
   width: 150px;
   border-radius: 10px;
   -webkit-transition: all 1s ease;
@@ -279,8 +299,13 @@ body {
   text-align: center;
 }
 
+.container__infoGame .infoGame .detailsGame .detail {
+  width: 90%;
+  margin: auto;
+}
+
 .container__infoGame .infoGame .detailsGame .detail h2 {
-  color: #00a3a6;
+  color: #809c59;
   font-weight: 300;
   margin-bottom: 30px;
 }
@@ -311,14 +336,14 @@ body {
   border-radius: 5px;
   padding: 10px;
   margin: auto;
-  background-color: #e52946;
+  background-color: #30c4e6;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
 .container__infoGame .infoGame .detailsGame .buttonStar .infoBtn__star:hover {
   cursor: pointer;
-  background-color: #e52946;
+  background-color: #30c4e6;
 }
 
 .container__infoGame .infoGame .detailsGame .buttonStar .infoBtn__star span {
@@ -376,42 +401,42 @@ body {
       -ms-flex-align: center;
           align-items: center;
   font-size: 60px;
-  border: black 1px solid;
+  border: #00a3a6 1px solid;
   border-radius: 3%;
 }
 
 .front {
-  background-color: #e7e5e5;
+  background-color: #00a3a6;
   -webkit-transform: translateZ(50px);
           transform: translateZ(50px);
 }
 
 .back {
-  background-color: #e7e5e5;
+  background-color: #00a3a6;
   -webkit-transform: rotateY(180deg) translateZ(50px);
           transform: rotateY(180deg) translateZ(50px);
 }
 
 .left {
-  background-color: #e7e5e5;
+  background-color: #00a3a6;
   -webkit-transform: rotateY(-90deg) translateZ(50px);
           transform: rotateY(-90deg) translateZ(50px);
 }
 
 .right {
-  background-color: #e7e5e5;
+  background-color: #00a3a6;
   -webkit-transform: rotateY(90deg) translateZ(50px);
           transform: rotateY(90deg) translateZ(50px);
 }
 
 .top {
-  background-color: #e7e5e5;
+  background-color: #00a3a6;
   -webkit-transform: rotateX(90deg) translateZ(50px);
           transform: rotateX(90deg) translateZ(50px);
 }
 
 .bottom {
-  background-color: #e7e5e5;
+  background-color: #00a3a6;
   -webkit-transform: rotateX(-90deg) translateZ(50px);
           transform: rotateX(-90deg) translateZ(50px);
 }
@@ -428,7 +453,7 @@ body {
 .dot {
   height: 17px;
   width: 17px;
-  background-color: black;
+  background-color: #fff;
   border-radius: 50%;
   -ms-grid-column-align: center;
       justify-self: center;
@@ -454,29 +479,29 @@ body {
 .back .inside .dot:nth-child(2) {
   -ms-grid-row: 1;
   grid-row: 1;
-  -ms-grid-column: 2;
-  grid-column: 2;
-}
-
-.back .inside .dot:nth-child(3) {
-  -ms-grid-row: 1;
-  grid-row: 1;
   -ms-grid-column: 3;
   grid-column: 3;
 }
 
-.back .inside .dot:nth-child(4) {
-  -ms-grid-row: 3;
-  grid-row: 3;
+.back .inside .dot:nth-child(3) {
+  -ms-grid-row: 2;
+  grid-row: 2;
   -ms-grid-column: 1;
   grid-column: 1;
+}
+
+.back .inside .dot:nth-child(4) {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 3;
+  grid-column: 3;
 }
 
 .back .inside .dot:nth-child(5) {
   -ms-grid-row: 3;
   grid-row: 3;
-  -ms-grid-column: 2;
-  grid-column: 2;
+  -ms-grid-column: 1;
+  grid-column: 1;
 }
 
 .back .inside .dot:nth-child(6) {
@@ -593,7 +618,7 @@ body {
 }
 
 .container__selectOption {
-  background-color: rgba(223, 221, 219, 0.699);
+  background-color: rgba(223, 221, 219, 0.473);
   width: 90%;
   height: 95vh;
   border-radius: 10px;
@@ -618,11 +643,17 @@ body {
 }
 
 .container__selectOption .postSelectOpcion {
-  background-color: #b9b9b8;
+  background-color: #30c4e6;
   width: 80%;
-  padding: 5px;
+  padding: 10px;
   border-radius: 10px;
   text-align: center;
+}
+
+.container__selectOption .postSelectOpcion span {
+  font-size: 1em;
+  font-weight: 800;
+  color: #fff;
 }
 
 .container__selectOption .optionsDados {
@@ -631,8 +662,9 @@ body {
 }
 
 .container__selectOption .optionsDados .dado {
-  margin: 0 auto 30px auto;
+  margin: 0 auto 20px auto;
   background-color: #00a3a6;
+  border: 4px solid #00a3a6;
   border-radius: 15px;
   width: 150px;
   height: 150px;
@@ -654,13 +686,12 @@ body {
 }
 
 .container__selectOption .optionsDados .dado:hover {
-  border: 4px solid #b9b9b8;
-  background-color: rgba(223, 221, 219, 0.699);
+  background-color: #148d8f;
 }
 
 .container__selectOption .optionsDados .dado span {
-  background-color: #b9b9b8;
   border-radius: 10px;
+  font-weight: 800;
   width: 60%;
   color: #fff;
   padding: 5px;
@@ -687,12 +718,13 @@ progress[value] {
   margin: 10px;
   overflow: hidden;
   /*  Estos estilos solo se aplicaran al fondo de la barra en mozilla */
-  border: 1px inset #666;
-  background-color: #d8d8d8;
+  background-color: #fff;
 }
 
 .containerDataReport {
+  border-radius: 15px;
   width: 90%;
+  height: 95vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -706,14 +738,28 @@ progress[value] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 50px;
+  gap: 20px;
 }
 
 .containerDataReport .logoStarGame {
   width: 250px;
 }
 
+.containerDataReport .infoGralGame span {
+  font-size: 1.2em;
+}
+
+.containerDataReport .infoGralGame .dataGameTotal {
+  padding: 0 10px;
+  font-size: 1.4em;
+  font-weight: 600;
+  color: #555554;
+}
+
 .containerDataReport .center {
+  padding: 30px;
+  border-radius: 15px;
+  background-color: #30c4e6;
   -webkit-transform: rotateZ(-90deg);
           transform: rotateZ(-90deg);
 }
@@ -735,6 +781,15 @@ progress[value] {
   width: 30px;
 }
 
+.containerDataReport .center .progress span {
+  width: 15px;
+  height: 15px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  font-weight: 800;
+  color: #fff;
+}
+
 .containerDataReport .btnPrint {
   width: 100%;
   text-align: center;
@@ -752,5 +807,74 @@ progress[value] {
 
 .containerDataReport--hide {
   display: none;
+}
+
+@media (min-width: 768px) {
+  .container__infoGame {
+    background-color: transparent;
+  }
+  .container__infoGame .infoGame {
+    background-color: rgba(223, 221, 219, 0.473);
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 10px;
+    padding: 40px;
+    border-radius: 15px;
+  }
+  .container__infoGame .infoGame .bookImg {
+    width: 30%;
+    margin: 0;
+  }
+  .container__infoGame .infoGame .bookImg img {
+    width: 200px;
+  }
+  .container__infoGame .infoGame .detailsGame {
+    width: 70%;
+  }
+  .container__selectOption .imgLogoBook {
+    width: 40%;
+  }
+  .container__selectOption .postSelectOpcion {
+    width: 50%;
+  }
+  .container__selectOption .optionsDados {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 50px;
+  }
+  .container__selectOption .optionsDados .dado {
+    margin: 0;
+    gap: 10px;
+  }
+  .container__startGame {
+    background-color: rgba(223, 221, 219, 0.473);
+  }
+  .container__startGame .logoStarGame img {
+    width: 300px;
+  }
+  .container__startGame .dadosContainer {
+    width: 80%;
+  }
+  .container__startGame .btn {
+    width: 80%;
+  }
+  .contenedor {
+    margin: 0 30px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

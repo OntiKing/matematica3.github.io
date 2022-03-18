@@ -14,30 +14,52 @@ progress[value] {
   overflow: hidden;
 
   /*  Estos estilos solo se aplicaran al fondo de la barra en mozilla */
-  border: 1px inset #666;
-  background-color: #d8d8d8;
+  // border: 1px inset #666;
+  background-color: $white;
 }
 
 .containerDataReport {
+  border-radius: 15px;
   width: 90%;
+  height: 95vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 20px;
   .logoStarGame {
     width: 250px;
   }
+  .infoGralGame {
+    span {
+      font-size: 1.2em;
+    }
+    .dataGameTotal {
+      padding: 0 10px;
+      font-size: 1.4em;
+      font-weight: 600;
+      color: $color--texDark;
+    }
+  }
   .center {
+    padding: 30px;
+    border-radius: 15px;
+    background-color: $CelesteHover;
     transform: rotateZ(-90deg);
     .progress {
       display: flex;
-
       justify-content: center;
       align-items: center;
       gap: 5px;
       img {
         width: 30px;
+      }
+      span {
+        width: 15px;
+        height: 15px;
+        transform: rotate(90deg);
+        font-weight: 800;
+        color: $white;
       }
     }
   }

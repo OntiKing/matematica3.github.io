@@ -16,19 +16,25 @@
     width: 70%;
   }
   .postSelectOpcion {
-    background-color: $color-textCard;
+    background-color: $CelesteHover;
 
     width: 80%;
-    padding: 5px;
+    padding: 10px;
     border-radius: 10px;
     text-align: center;
+    span {
+      font-size: 1em;
+      font-weight: 800;
+      color: $white;
+    }
   }
   .optionsDados {
     width: 100%;
     text-align: center;
     .dado {
-      margin: 0 auto 30px auto;
-      background-color: $color--AnswerCorret;
+      margin: 0 auto 20px auto;
+      background-color: $Petroleo;
+      border: 4px solid $Petroleo;
       border-radius: 15px;
 
       width: 150px;
@@ -40,12 +46,11 @@
       gap: 5px;
       cursor: pointer;
       &:hover {
-        border: 4px solid $color-textCard;
-        background-color: $color--backgroundGame;
+        background-color: $colorEnableBtnHover;
       }
       span {
-        background-color: $color-textCard;
         border-radius: 10px;
+        font-weight: 800;
         width: 60%;
         color: $white;
         padding: 5px;
