@@ -72,51 +72,55 @@ function makePDF() {
     var doc = new jsPDF();
 
     doc.setTextColor(150);
-    doc.text(`REPORTE ESTADISTICO`, 60, 10);
-    doc.addImage("img/matematica-3.png", "JPEG", 80, 20, 30, 40);
+    doc.text(`REPORTE ESTADISTICO`, 70, 30);
 
     doc.setTextColor(150);
     doc.text(
-      `La probabilidad de sacar uno en ${totalThrow} tiros fue de ${one}`,
+      `La probabilidad de sacar         en ${totalThrow} tiros fue de ${one}`,
       20,
       70
     );
+    doc.addImage("img/dadoUno.png", "JPEG", 83, 64, 6, 6);
 
     doc.setTextColor(150);
     doc.text(
-      `La probabilidad de sacar dos en ${totalThrow} tiros fue de ${two}`,
+      `La probabilidad de sacar         en ${totalThrow} tiros fue de ${two}`,
       20,
       80
     );
+    doc.addImage("img/dadoDos.png", "JPEG", 84, 74, 6, 6);
 
     doc.setTextColor(150);
     doc.text(
-      `La probabilidad de sacar tres en ${totalThrow} tiros fue de ${three}`,
+      `La probabilidad de sacar         en ${totalThrow} tiros fue de ${three}`,
       20,
       90
     );
+    doc.addImage("img/dadoTres.png", "JPEG", 84, 84, 6, 6);
 
     doc.setTextColor(150);
     doc.text(
-      `La probabilidad de sacar cuatro en ${totalThrow} tiros fue de ${four}`,
+      `La probabilidad de sacar         en ${totalThrow} tiros fue de ${four}`,
       20,
       100
     );
+    doc.addImage("img/dado4.png", "JPEG", 84, 94, 6, 6);
 
     doc.setTextColor(150);
     doc.text(
-      `La probabilidad de sacar cinco en ${totalThrow} tiros fue de ${five}`,
+      `La probabilidad de sacar          en ${totalThrow} tiros fue de ${five}`,
       20,
       110
     );
+    doc.addImage("img/dado5.png", "JPEG", 84, 104, 6, 6);
 
     doc.setTextColor(150);
     doc.text(
-      `La probabilidad de sacar seis en ${totalThrow} tiros fue de ${six}`,
+      `La probabilidad de sacar           en ${totalThrow} tiros fue de ${six}`,
       20,
       120
     );
-
+    doc.addImage("img/dado6.png", "JPEG", 84, 114, 6, 6);
     doc.save("docHtmlPDF");
   });
 }

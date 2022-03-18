@@ -1,4 +1,4 @@
-@media (min-width: 768px) {
+@media (min-width: 650px) {
   .container__infoGame {
     background-color: transparent;
     .infoGame {
@@ -63,4 +63,67 @@
 }
 
 @media (min-width: 768px) {
+  .container__selectOption {
+    .imgLogoBook {
+      width: 50%;
+    }
+    .postSelectOpcion {
+      width: 60%;
+    }
+    .optionsDados {
+      gap: 70px;
+    }
+  }
+  .container__startGame {
+    .logoStarGame {
+      img {
+        width: 300px;
+      }
+    }
+    .dadosContainer {
+    }
+    .btn {
+      .btnthrow {
+        width: 70%;
+      }
+    }
+    .infoGame {
+      .reportData {
+        span {
+          font-size: 1.7;
+        }
+        img {
+          width: 60px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .container__selectOption {
+    width: 70%;
+  }
+  .container__startGame {
+    width: 70%;
+    .logoStarGame {
+      img {
+        width: 350px;
+      }
+    }
+    .dadosContainer {
+    }
+    .btn {
+      .btnthrow {
+        width: 60%;
+      }
+    }
+  }
+  .containerDataReport {
+    background-color: $color--backgroundGame;
+    width: 70%;
+    .btnPrint {
+      width: 30%;
+    }
+  }
 }

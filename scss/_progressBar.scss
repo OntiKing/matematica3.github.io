@@ -44,7 +44,7 @@ progress[value] {
   .center {
     padding: 30px;
     border-radius: 15px;
-    background-color: $CelesteHover;
+    background-color: $Bordo;
     transform: rotateZ(-90deg);
     .progress {
       display: flex;
@@ -67,14 +67,18 @@ progress[value] {
     width: 100%;
 
     text-align: center;
+
     button {
       width: 80%;
       border: none;
       border-radius: 10px;
-      background-color: rebeccapurple;
+      background-color: $Amarillo;
       padding: 10px;
       margin: 0 auto;
-      color: white;
+      color: #222;
+      cursor: pointer;
+      &:hover {
+      }
     }
   }
 }

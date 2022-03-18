@@ -101,7 +101,7 @@ body {
   background-color: #30c4e6;
   border-radius: 15px;
   margin-top: 10px;
-  padding: 15px;
+  padding: 10px;
   cursor: pointer;
   color: white;
   -webkit-transition: all 0.5s ease;
@@ -643,7 +643,7 @@ body {
 }
 
 .container__selectOption .postSelectOpcion {
-  background-color: #30c4e6;
+  background-color: #809c59;
   width: 80%;
   padding: 10px;
   border-radius: 10px;
@@ -759,7 +759,7 @@ progress[value] {
 .containerDataReport .center {
   padding: 30px;
   border-radius: 15px;
-  background-color: #30c4e6;
+  background-color: #809c59;
   -webkit-transform: rotateZ(-90deg);
           transform: rotateZ(-90deg);
 }
@@ -799,17 +799,18 @@ progress[value] {
   width: 80%;
   border: none;
   border-radius: 10px;
-  background-color: rebeccapurple;
+  background-color: #ffd615;
   padding: 10px;
   margin: 0 auto;
-  color: white;
+  color: #222;
+  cursor: pointer;
 }
 
 .containerDataReport--hide {
   display: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 650px) {
   .container__infoGame {
     background-color: transparent;
   }
@@ -875,6 +876,52 @@ progress[value] {
   }
   .contenedor {
     margin: 0 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container__selectOption .imgLogoBook {
+    width: 50%;
+  }
+  .container__selectOption .postSelectOpcion {
+    width: 60%;
+  }
+  .container__selectOption .optionsDados {
+    gap: 70px;
+  }
+  .container__startGame .logoStarGame img {
+    width: 300px;
+  }
+  .container__startGame .btn .btnthrow {
+    width: 70%;
+  }
+  .container__startGame .infoGame .reportData span {
+    font-size: 1.7;
+  }
+  .container__startGame .infoGame .reportData img {
+    width: 60px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .container__selectOption {
+    width: 70%;
+  }
+  .container__startGame {
+    width: 70%;
+  }
+  .container__startGame .logoStarGame img {
+    width: 350px;
+  }
+  .container__startGame .btn .btnthrow {
+    width: 60%;
+  }
+  .containerDataReport {
+    background-color: rgba(223, 221, 219, 0.473);
+    width: 70%;
+  }
+  .containerDataReport .btnPrint {
+    width: 30%;
   }
 }
 /*# sourceMappingURL=style.css.map */
