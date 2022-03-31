@@ -101,6 +101,11 @@
 }
 
 @media (min-width: 1000px) {
+  .container__infoGame {
+    .infoGame {
+      width: 50%;
+    }
+  }
   .container__selectOption {
     width: 70%;
   }

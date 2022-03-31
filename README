@@ -1,1 +1,3 @@
 para poder compilar se debe trabajar con sass
+- Para la impresion en pdf se usa la api de 
+html2pdf.js

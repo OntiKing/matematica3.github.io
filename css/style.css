@@ -27,7 +27,7 @@ body {
   overflow-x: hidden;
   background-size: cover;
   font-family: montserratB;
-  background: url(/img/bg.svg);
+  background: url(../img/bg.svg);
 }
 
 .container {
@@ -904,6 +904,9 @@ progress[value] {
 }
 
 @media (min-width: 1000px) {
+  .container__infoGame .infoGame {
+    width: 50%;
+  }
   .container__selectOption {
     width: 70%;
   }
